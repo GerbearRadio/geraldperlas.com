@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -6,24 +10,27 @@ body {
   overflow-x: hidden;
 }
 
-#bg-video {
+.background-image {
   position: fixed;
   top: 0;
   left: 0;
   min-width: 100vw;
   min-height: 100vh;
-  object-fit: cover;
-  z-index: -2;
+  background-image: url('assets/images/background.jpg');
+  background-size: cover;
+  background-position: center;
   filter: blur(8px) brightness(0.7);
-  pointer-events: none;
+  z-index: -2;
 }
 
 .overlay {
   position: relative;
   z-index: 1;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  max-width: 600px;
+  margin: auto;
 }
 
 ul {
@@ -42,21 +49,14 @@ li:hover {
   transform: scale(1.05);
 }
 
-button {
-  margin-top: 2rem;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-}
-
-.background-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100vw;
-  min-height: 100vh;
-  background-image: url('assets/images/background.jpg'); /* your image path */
-  background-size: cover;
-  background-position: center;
-  filter: blur(8px) brightness(0.7);
-  z-index: -2;
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  li {
+    font-size: 1.2rem;
+  }
+  .overlay {
+    padding: 1rem;
+  }
 }
