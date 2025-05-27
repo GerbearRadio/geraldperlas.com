@@ -5,126 +5,60 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background: #000;
   color: white;
   overflow-x: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  text-align: center;
 }
 
 .background-image {
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 100vw;
-  min-height: 100vh;
-  background-image: url('assets/images/background.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-image: url('assets/images/thumb1.jpg');
   background-size: cover;
   background-position: center;
-  filter: blur(8px) brightness(0.7);
-  z-index: -2;
+  background-repeat: no-repeat;
+  filter: blur(8px) brightness(0.5);
+  z-index: -1;
 }
 
-.overlay {
+.section {
   position: relative;
-  z-index: 1;
-  padding: 2rem 1rem;
-  max-width: 90%;
-  width: 600px;
+  z-index: 2;
+  text-align: center;
+  padding: 3rem 1rem;
+  max-width: 800px;
   margin: auto;
 }
 
-.menu h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+.section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-.tagline {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+.section .tagline {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
 }
 
 ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  font-size: 1.5rem;
 }
 
-li {
-  margin: 1.2rem 0;
-  cursor: pointer;
-  font-size: 2rem;
-  transition: transform 0.2s ease;
+ul li {
+  margin: 1.25rem 0;
 }
 
-li:hover {
-  transform: scale(1.05);
-}
-
-.content {
-  margin-top: 2rem;
-  font-size: 1.2rem;
-}
-
-@media (max-width: 480px) {
-  .menu h1 {
-    font-size: 1.5rem;
-  }
-  .tagline {
-    font-size: 1rem;
-  }
-  li {
-    font-size: 1.5rem;
-  }
-  .content {
-    font-size: 1rem;
-  }
-}
-
-.section {
-  padding: 2rem 1rem;
-  max-width: 1000px;
-  margin: auto;
+ul li a {
+  text-decoration: none;
   color: white;
-  text-align: center;
-}
-
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.section p {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-}
-
-.media-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.media-item {
-  width: 100%;
-  max-width: 400px;
-}
-
-.media-item video,
-.media-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 2px solid #fff;
-}
-
-.media-item p {
-  margin-top: 0.5rem;
-  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  display: inline-block;
 }
 
 button {
@@ -139,11 +73,15 @@ button {
 }
 
 @media (max-width: 600px) {
-  .section h2 {
-    font-size: 1.5rem;
+  .section h1 {
+    font-size: 2rem;
   }
-  .media-grid {
-    flex-direction: column;
-    align-items: center;
+
+  .section .tagline {
+    font-size: 1rem;
+  }
+
+  ul {
+    font-size: 1.25rem;
   }
 }
