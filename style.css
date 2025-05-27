@@ -83,3 +83,67 @@ li:hover {
     font-size: 1rem;
   }
 }
+
+.section {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.media-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.media-item {
+  width: 100%;
+  max-width: 400px;
+}
+
+.media-item video,
+.media-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #fff;
+}
+
+.media-item p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .section h2 {
+    font-size: 1.5rem;
+  }
+  .media-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
