@@ -60,3 +60,24 @@ button {
   background-color: #f4f4f4;
   color: #111;
 }
+/* Background Video Setup */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+  filter: blur(8px) brightness(0.7);
+  pointer-events: none;
+}
+
+/* Overlay Content on Top of Background */
+.overlay {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  color: white;
+  text-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
