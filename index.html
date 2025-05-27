@@ -7,27 +7,16 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Background Image -->
   <div class="background-image"></div>
-
-  <!-- Main Content Overlay -->
-  <div class="overlay">
-    <div class="menu">
-      <h1>💾 geraldperlas.com</h1>
-      <p class="tagline">design. cut. render. repeat.</p>
-      <ul>
-        <li onclick="playClick(); loadSection('sections/play.html')">▶ Play</li>
-        <li onclick="playClick(); loadSection('sections/scenes.html')">🎨 Scene Selection</li>
-        <li onclick="playClick(); loadSection('sections/language.html')">🌐 Language</li>
-        <li onclick="playClick(); loadSection('sections/features.html')">⭐ Special Features</li>
-      </ul>
-    </div>
-    <div class="content" id="content">
-      <p>Click a menu item to begin.</p>
-    </div>
+  <div class="section">
+    <h1>💾 geraldperlas.com</h1>
+    <p class="tagline">design. cut. render. repeat.</p>
+    <ul>
+      <li><a href="sections/play.html">▶ Play</a></li>
+      <li><a href="sections/scenes.html">🎨 Scene Selection</a></li>
+      <li><a href="sections/language.html">🌐 Language</a></li>
+      <li><a href="sections/features.html">⭐ Special Features</a></li>
+    </ul>
   </div>
-
-  <audio id="click-sound" src="assets/sounds/click.mp3" preload="auto"></audio>
-  <script src="script.js"></script>
 </body>
 </html>
