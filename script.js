@@ -1,31 +1,15 @@
-
 function loadSection(file) {
-  playClickSound();
-  fetch('sections/' + file)
-    .then(res => res.text())
+  fetch(file)
+    .then(response => response.text())
     .then(html => {
-      document.getElementById("content").innerHTML = html;
-    })
-    .catch(() => {
-      document.getElementById("content").innerHTML = "<p>Error loading section.</p>";
+      document.getElementById('content').innerHTML = html;
     });
 }
-function playClickSound() {
-  const audio = document.getElementById("click-sound");
-  if (audio) audio.play();
+
+function playClick() {
+  document.getElementById('click-sound').play();
 }
+
 function toggleTheme() {
-  document.body.classList.toggle("light-mode");
-  localStorage.setItem("theme", document.body.classList.contains("light-mode") ? "light" : "dark");
+  document.body.classList.toggle('light');
 }
-window.onload = function () {
-  if (localStorage.getItem("theme") === "light") {
-    document.body.classList.add("light-mode");
-  }
-  setTimeout(() => {
-    document.getElementById("intro-modal").style.display = "none";
-    document.querySelector(".menu").style.display = "block";
-    document.getElementById("content").style.display = "block";
-  }, 4000);
-  document.getElementById("loader").style.display = "none";
-};

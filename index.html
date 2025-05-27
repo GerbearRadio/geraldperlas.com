@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DVD Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
   <!-- Background Video -->
   <video id="bg-video" autoplay muted loop playsinline>
@@ -5,26 +13,25 @@
     Your browser does not support the video tag.
   </video>
 
-  <!-- Main Site Content -->
+  <!-- Main Content Overlay -->
   <div class="overlay">
-    <div class="menu" style="display:none;">
+    <div class="menu">
       <h1>💾 geraldperlas.com</h1>
       <p class="tagline">design. cut. render. repeat.</p>
       <ul>
-        <li onclick="playClick(); loadSection('play.html')">▶ Play</li>
-        <li onclick="playClick(); loadSection('scenes.html')">🎨 Scene Selection</li>
-        <li onclick="playClick(); loadSection('language.html')">🌐 Language</li>
-        <li onclick="playClick(); loadSection('features.html')">⭐ Special Features</li>
+        <li onclick="playClick(); loadSection('sections/play.html')">▶ Play</li>
+        <li onclick="playClick(); loadSection('sections/scenes.html')">🎨 Scene Selection</li>
+        <li onclick="playClick(); loadSection('sections/language.html')">🌐 Language</li>
+        <li onclick="playClick(); loadSection('sections/features.html')">⭐ Special Features</li>
       </ul>
       <button onclick="toggleTheme()">🌓 Toggle Theme</button>
     </div>
-
-    <div class="content" id="content" style="display:none;">
+    <div class="content" id="content">
       <p>Click a menu item to begin.</p>
     </div>
   </div>
 
-  <!-- Sounds and Scripts -->
   <audio id="click-sound" src="assets/sounds/click.mp3" preload="auto"></audio>
   <script src="script.js"></script>
 </body>
+</html>
