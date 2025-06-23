@@ -23,15 +23,24 @@ build/
 
 ## 🎨 Customizing Your Portfolio
 
-### Step 1: Adding Your Images
+### DVD Menu Sections Overview
+
+Your portfolio is organized into 4 main DVD-style sections:
+
+1. **PLAY** - Your video highlight reel
+2. **SCENE SELECTION** - Gallery of projects by digital discipline
+3. **LANGUAGES** - Software proficiency showcase
+4. **SPECIAL FEATURES** - About section and behind-the-scenes content
+
+### Step 1: Adding Your Media
 
 1. **Create a media folder**: Create `assets/media/` directory
-2. **Upload your images**: Add your portfolio images to this folder
-3. **Recommended formats**: JPG, PNG, WebP (for web optimization)
-4. **Recommended sizes**: 
-   - Thumbnail images: 400x300px
+2. **Upload your content**: Add your portfolio files to this folder
+3. **Recommended formats**: 
+   - Videos: MP4, MOV (for highlight reel)
+   - Images: JPG, PNG, WebP (for portfolio work)
+   - Thumbnails: 400x300px
    - Lightbox images: 1200x900px
-   - Background images: 1920x1080px
 
 ### Step 2: Update Portfolio Content
 
@@ -41,18 +50,25 @@ Open `assets/script.js` and modify the `portfolioData` object:
 
 ```javascript
 const portfolioData = {
-  photography: {
-    title: 'YOUR PHOTOGRAPHY TITLE',
+  play: {
+    title: 'PLAY',
+    content: `
+      // Replace the video placeholder with your highlight reel
+      // Use YouTube embed, Vimeo embed, or direct video file
+    `
+  },
+  scenes: {
+    title: 'SCENE SELECTION',
     items: [
       {
-        src: 'assets/media/your-photo-1.jpg',
-        caption: 'Your Photo Caption',
-        description: 'Detailed description of your work'
+        src: 'assets/media/your-video-project.jpg',
+        caption: 'Video Editing Projects',
+        description: 'Your video editing work description'
       },
-      // Add more items...
+      // Add your other discipline projects...
     ]
   },
-  // Update other sections...
+  // Update languages and features sections...
 };
 ```
 
