@@ -2,10 +2,16 @@
 
 /* CSS Variables */
 :root {
-  --dvd-blue: #1a365d;
-  --dvd-light: #2196f3;
-  --dvd-cyan: #00bcd4;
-  --dvd-gold: #ffd700;
+  /* Primary Color Palette */
+  --boston-blue: #3696a6;
+  --froly: #ef6487;
+  --java: #1ce3bc;
+  
+  /* DVD Theme Mapping */
+  --dvd-blue: var(--boston-blue);
+  --dvd-light: var(--java);
+  --dvd-cyan: var(--java);
+  --dvd-gold: var(--froly);
   --dvd-dark: #0a0f1c;
   --dvd-gray: #212121;
 }
@@ -172,6 +178,41 @@ body {
 .main-menu {
   padding: 48px 0;
   animation: fadeInUp 1s ease-out 0.5s both;
+  background-image: url('assets/media/background_1750660981029.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  position: relative;
+}
+
+.main-menu::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(10, 15, 28, 0.4);
+  z-index: 1;
+}
+
+.main-menu::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(28, 227, 188, 0.1) 2px,
+    rgba(28, 227, 188, 0.1) 4px
+  );
+  opacity: 0.3;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.main-menu .container {
+  position: relative;
+  z-index: 10;
 }
 
 .menu-title {
@@ -222,14 +263,14 @@ body {
 }
 
 .menu-button {
-  background: linear-gradient(135deg, var(--dvd-blue), var(--dvd-light));
-  border: 2px solid var(--dvd-cyan);
+  background: linear-gradient(135deg, var(--boston-blue), var(--froly));
+  border: 2px solid var(--java);
   border-radius: 8px;
   padding: 32px;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 20px rgba(0, 188, 212, 0.3);
+  box-shadow: 0 0 20px rgba(28, 227, 188, 0.3);
   animation: float 3s ease-in-out infinite;
   position: relative;
   overflow: hidden;
@@ -243,8 +284,8 @@ body {
 .menu-button:nth-child(6) { animation-delay: 1s; }
 
 .menu-button:hover {
-  background: linear-gradient(135deg, var(--dvd-light), var(--dvd-cyan));
-  box-shadow: 0 0 30px rgba(0, 188, 212, 0.6);
+  background: linear-gradient(135deg, var(--java), var(--froly));
+  box-shadow: 0 0 30px rgba(28, 227, 188, 0.6);
   transform: scale(1.05);
 }
 
@@ -613,10 +654,10 @@ body {
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px var(--dvd-cyan), 0 0 20px var(--dvd-cyan), 0 0 30px var(--dvd-cyan);
+    text-shadow: 0 0 10px var(--java), 0 0 20px var(--java), 0 0 30px var(--java);
   }
   to {
-    text-shadow: 0 0 20px var(--dvd-light), 0 0 30px var(--dvd-light), 0 0 40px var(--dvd-light);
+    text-shadow: 0 0 20px var(--froly), 0 0 30px var(--froly), 0 0 40px var(--froly);
   }
 }
 
