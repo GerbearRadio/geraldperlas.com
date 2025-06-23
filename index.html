@@ -1,207 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Portfolio - DVD Menu Style</title>
-    <meta name="description" content="Creative portfolio showcasing photography, photo editing, graphic design, video editing, and motion graphics with a retro DVD menu interface.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gerald Perlas Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <div id="app" class="scanlines">
-        <!-- Loading Screen -->
-        <div id="loading-screen" class="loading-screen">
-            <div class="loading-content">
-                <div class="loading-disc">
-                    <div class="disc-icon">📀</div>
-                </div>
-                <h2 class="loading-text">LOADING PORTFOLIO...</h2>
-                <div class="loading-bar">
-                    <div class="loading-progress"></div>
-                </div>
-            </div>
-        </div>
+  <header>
+    <h1 class="headline">Gerald Perlas</h1>
+    <nav class="navbar">
+      <a href="#reel" class="nav-link" data-message="Watch">Play</a>
+      <a href="#skills" class="nav-link" data-message="Tools">Language</a>
+      <a href="#portfolio" class="nav-link" data-message="Projects">Scenes</a>
+      <a href="#extras" class="nav-link" data-message="Behind the Scenes">Special Features</a>
+    </nav>
+  </header>
 
-        <!-- DVD Bouncing Logo -->
-        <div id="dvd-logo" class="dvd-logo" style="display: none;">
-            <svg width="120" height="60" viewBox="0 0 120 60">
-                <rect width="120" height="60" rx="8" fill="#00BCD4" fill-opacity="0.8"/>
-                <text x="60" y="25" text-anchor="middle" class="logo-text-main">DVD</text>
-                <text x="60" y="42" text-anchor="middle" class="logo-text-sub">VIDEO</text>
-                <circle cx="20" cy="30" r="3" fill="white" fill-opacity="0.7"/>
-                <circle cx="100" cy="30" r="3" fill="white" fill-opacity="0.7"/>
-                <rect width="120" height="60" rx="8" fill="none" stroke="white" stroke-width="1" stroke-opacity="0.3"/>
-            </svg>
-        </div>
-
-        <!-- Main Content -->
-        <div id="main-content" class="main-content hidden">
-            <!-- Header -->
-            <header class="header">
-                <div class="container">
-                    <div class="header-content">
-                        <div class="logo-section">
-                            <span class="play-icon">▶</span>
-                            <h1 class="site-title">CREATIVE.PORTFOLIO</h1>
-                        </div>
-                        <div class="format-info">
-                            <span class="format-badge">16:9</span>
-                            <span class="format-badge">STEREO</span>
-                            <span class="format-badge">HD</span>
-                        </div>
-                    </div>
-                </div>
-            </header>
-
-            <!-- Main Menu -->
-            <main class="main-menu">
-                <div class="container">
-                    <!-- Title Section -->
-                    <div class="menu-title">
-                        <div class="title-bg"></div>
-                        <h2 class="main-title">MAIN MENU</h2>
-                    </div>
-
-                    <!-- Menu Buttons -->
-                    <div class="menu-grid">
-                        <div class="menu-button" data-section="photography">
-                            <div class="button-icon">📷</div>
-                            <h3>PHOTOGRAPHY</h3>
-                            <p>Capture moments in time</p>
-                            <div class="button-dots">
-                                <span></span><span></span><span></span>
-                            </div>
-                        </div>
-
-                        <div class="menu-button" data-section="editing">
-                            <div class="button-icon">🪄</div>
-                            <h3>PHOTO EDITING</h3>
-                            <p>Transform reality</p>
-                            <div class="button-dots">
-                                <span></span><span></span><span></span>
-                            </div>
-                        </div>
-
-                        <div class="menu-button" data-section="graphics">
-                            <div class="button-icon">🎨</div>
-                            <h3>GRAPHIC DESIGN</h3>
-                            <p>Visual storytelling</p>
-                            <div class="button-dots">
-                                <span></span><span></span><span></span>
-                            </div>
-                        </div>
-
-                        <div class="menu-button" data-section="video">
-                            <div class="button-icon">🎥</div>
-                            <h3>VIDEO EDITING</h3>
-                            <p>Motion narratives</p>
-                            <div class="button-dots">
-                                <span></span><span></span><span></span>
-                            </div>
-                        </div>
-
-                        <div class="menu-button" data-section="motion">
-                            <div class="button-icon">🎬</div>
-                            <h3>MOTION GRAPHICS</h3>
-                            <p>Animated experiences</p>
-                            <div class="button-dots">
-                                <span></span><span></span><span></span>
-                            </div>
-                        </div>
-
-                        <div class="menu-button" data-section="about">
-                            <div class="button-icon">👤</div>
-                            <h3>ABOUT</h3>
-                            <p>Meet the creator</p>
-                            <div class="button-dots">
-                                <span></span><span></span><span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Featured Work Section -->
-                    <div class="featured-section">
-                        <div class="featured-bg"></div>
-                        <div class="featured-content">
-                            <h3>FEATURED PORTFOLIO</h3>
-                            <p>Premium creative showcase</p>
-                        </div>
-                    </div>
-
-                    <!-- Preview Grid -->
-                    <div class="preview-grid">
-                        <div class="preview-item" onclick="openLightbox(0)">
-                            <img src="https://images.unsplash.com/photo-1452457750107-cd084dce177d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Portrait Photography">
-                            <span class="preview-label">Portrait.jpg</span>
-                        </div>
-                        <div class="preview-item" onclick="openLightbox(1)">
-                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Landscape Photography">
-                            <span class="preview-label">Landscape.jpg</span>
-                        </div>
-                        <div class="preview-item" onclick="openLightbox(2)">
-                            <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Graphic Design">
-                            <span class="preview-label">Design.ai</span>
-                        </div>
-                        <div class="preview-item" onclick="openLightbox(3)">
-                            <img src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Photo Editing">
-                            <span class="preview-label">Retouch.ai</span>
-                        </div>
-                        <div class="preview-item" onclick="openLightbox(4)">
-                            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Motion Graphics">
-                            <span class="preview-label">Motion.mp4</span>
-                        </div>
-                        <div class="preview-item" onclick="openLightbox(5)">
-                            <img src="https://images.unsplash.com/photo-1574717024714-1b935f80bcf4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Video Editing">
-                            <span class="preview-label">Video.mp4</span>
-                        </div>
-                    </div>
-                </div>
-            </main>
-
-            <!-- Footer -->
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer-content">
-                        <div class="footer-info">
-                            <p>&copy; 2024 CREATIVE.PORTFOLIO - All rights reserved</p>
-                            <p class="footer-sub">Optimized for GitHub Pages deployment</p>
-                        </div>
-                        <div class="footer-buttons">
-                            <button class="footer-btn">📧 CONTACT</button>
-                            <button class="footer-btn">📄 RESUME</button>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
-
-        <!-- Portfolio Section Modal -->
-        <div id="portfolio-modal" class="modal hidden">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 id="modal-title"></h2>
-                    <button class="close-btn" onclick="closeModal()">← BACK TO MENU</button>
-                </div>
-                <div id="modal-body" class="modal-body"></div>
-            </div>
-        </div>
-
-        <!-- Lightbox -->
-        <div id="lightbox" class="lightbox hidden" onclick="closeLightbox()">
-            <div class="lightbox-content" onclick="event.stopPropagation()">
-                <button class="lightbox-close" onclick="closeLightbox()">×</button>
-                <img id="lightbox-image" src="" alt="">
-                <p id="lightbox-caption"></p>
-            </div>
-        </div>
-
-        <!-- Scanlines Effect -->
-        <div class="scanline"></div>
+  <section id="hero" class="hero-section">
+    <video autoplay muted loop class="hero-video">
+      <source src="assets/videos/hero.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-text">
+      <h2>Creative Direction. Motion Design. Visual Storytelling.</h2>
+      <a href="#portfolio" class="cta-button">View Work</a>
     </div>
+  </section>
 
-    <script src="assets/script.js"></script>
+  <section id="reel">
+    <h2>Highlight Reel</h2>
+    <video controls>
+      <source src="assets/videos/reel.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+  <section id="skills">
+    <h2>Tools of the Trade</h2>
+    <div class="skills-grid">
+      <div class="skill-card">After Effects</div>
+      <div class="skill-card">Premiere Pro</div>
+      <div class="skill-card">Unreal Engine</div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Featured Scenes</h2>
+    <div class="portfolio-grid">
+      <div class="project-card">
+        <img src="assets/images/project1.jpg" alt="Project 1" />
+        <div class="overlay">TRUE MESSAGE</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="extras">
+    <h2>Behind the Scenes</h2>
+    <p>Coming Soon...</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Gerald Perlas | <a href="mailto:gerald@example.com">Contact</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
