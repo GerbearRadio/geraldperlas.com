@@ -207,7 +207,7 @@ class DVDBouncingLogo {
     this.logo = document.getElementById('dvd-logo');
     this.position = { x: Math.random() * 200 + 50, y: Math.random() * 200 + 50 };
     this.velocity = { x: 1.8, y: 1.4 };
-    this.colors = ['#00BCD4', '#2196F3', '#FFD700', '#FF6B35', '#9C27B0', '#4CAF50', '#FF1744', '#00E676'];
+    this.colors = ['#3696a6', '#ef6487', '#1ce3bc'];
     this.currentColor = this.colors[0];
     this.logoWidth = 120;
     this.logoHeight = 60;
