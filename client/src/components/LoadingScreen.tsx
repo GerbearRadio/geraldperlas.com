@@ -40,7 +40,7 @@ export default function LoadingScreen({ isVisible }: LoadingScreenProps) {
           transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
           className="text-2xl font-bold font-retro"
         >
-          LOADING PORTFOLIO...
+          LOADING...
         </motion.h2>
         <div className="mt-4 w-64 bg-dvd-gray rounded-full h-2">
           <motion.div
