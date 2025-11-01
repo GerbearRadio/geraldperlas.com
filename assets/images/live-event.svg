@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#0b1220" stop-opacity="0.85"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence baseFrequency="0.8" numOctaves="2" stitchTiles="stitch" result="t"/>
+      <feColorMatrix type="saturate" values="0" />
+      <feBlend mode="overlay" in="SourceGraphic" in2="t"/>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <g transform="translate(60,60)">
+    <rect x="0" y="0" width="1080" height="680" rx="18" fill="rgba(255,255,255,0.03)"/>
+    <text x="40" y="120" font-family="Inter, Arial, sans-serif" font-size="52" fill="white" font-weight="700">Live Event</text>
+    <text x="40" y="180" font-family="Inter, Arial, sans-serif" font-size="22" fill="rgba(255,255,255,0.9)">Highlights • 3:12</text>
+  </g>
+</svg>
