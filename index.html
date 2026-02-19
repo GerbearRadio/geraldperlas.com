@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Video Journal Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-flex">
+    <div>
+      <h1 class="logo">Your Name</h1>
+      <p class="tagline">Visual Stories • Motion • Design</p>
+    </div>
+
+    <div class="controls">
+      <div class="filter-buttons">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="photo">Photo</button>
+        <button data-filter="video">Video</button>
+        <button data-filter="design">Design</button>
+      </div>
+
+      <button id="themeToggle" class="theme-toggle">Toggle Theme</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h2>Visual Diary</h2>
+    <p>A curated collection of photography, film, edits, and design explorations.</p>
+  </div>
+</section>
+
+<section id="journal" class="section">
+  <div class="container">
+
+    <article class="entry" data-category="photo">
+      <div class="entry-media">
+        <img src="assets/sample1.jpg" alt="Photography Project">
+      </div>
+      <div class="entry-content">
+        <h3>Urban Silence</h3>
+        <p class="meta">Photography • 2026</p>
+        <p>Cinematic exploration of light and shadow.</p>
+      </div>
+    </article>
+
+    <article class="entry" data-category="video">
+      <div class="entry-media">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="Video Project"
+          frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+      <div class="entry-content">
+        <h3>Motion Study</h3>
+        <p class="meta">Video Editing • 2026</p>
+        <p>Pacing experiment using ambient rhythm.</p>
+      </div>
+    </article>
+
+    <article class="entry" data-category="design">
+      <div class="entry-media">
+        <img src="assets/sample2.jpg" alt="Design Project">
+      </div>
+      <div class="entry-content">
+        <h3>Minimal Identity</h3>
+        <p class="meta">Graphic Design • 2026</p>
+        <p>Typography-driven branding system.</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Your Name. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
