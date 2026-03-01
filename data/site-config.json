@@ -1,0 +1,46 @@
+{
+  "siteTitle": "YOUR NAME",
+  "siteSubtitle": "Minimal, customizable portfolio \u2022 JSON-powered \u2022 GitHub Pages friendly",
+  "about": {
+    "enabled": true,
+    "heading": "About Me",
+    "description": "Write a short introduction here. Share your background, creative focus, and the kind of work you enjoy making. You can also mention industries you work with, your style, or what you\u2019re looking for next.",
+    "profilePhoto": "assets/profile-placeholder.svg",
+    "alt": "Profile photo"
+  },
+  "social": {
+    "enabled": true,
+    "links": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/YOUR_HANDLE"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@YOUR_HANDLE"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/YOUR_HANDLE"
+      },
+      {
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@YOUR_HANDLE"
+      },
+      {
+        "label": "Rumble",
+        "url": "https://rumble.com/c/YOUR_CHANNEL"
+      }
+    ]
+  },
+  "extras": {
+    "enabled": true,
+    "title": "Behind the Scenes | Extras",
+    "subtitle": "Password protected vault for process, drafts, and bonus materials.",
+    "salt": "extras-v1",
+    "passwordHash": "6f1f60fc1efb859f72b2d623911431115f053618c1573f992a1628ab957597b4",
+    "passwordHint": "Default password is changeme (update this in site-config.json).",
+    "lockTimeoutMinutes": 30,
+    "idleTimeoutMinutes": 10
+  }
+}

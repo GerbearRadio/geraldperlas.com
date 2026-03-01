@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>yuh got me! 🤷🏾‍♂️ </title>
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="home">
+  <div id="siteLoader" class="site-loader" aria-hidden="false">
+    <div class="loader-inner">
+      <div class="loader-label">Loading Archive</div>
+      <div class="loader-track"><div id="loaderBar" class="loader-bar"></div></div>
+    </div>
+  </div>
+  <div id="pageTransition" class="page-transition" aria-hidden="true"></div>
+
+  <header class="site-header fade-in">
+    <div>
+      <p class="eyebrow">Portfolio</p>
+      <h1>GERALD PERLAS</h1>
+      <p class="subtitle">❤️ + 🤯 via photo, video, edits & design</p>
+    </div>
+    <div class="header-actions">
+            <a class="btn" href="behind-the-scenes.html">Behind the Scenes | Extras</a>
+<button id="themeToggle" class="btn" type="button" aria-label="Toggle dark and light mode">Toggle Theme</button>
+    </div>
+  </header>
+
+
+  <section class="container fade-in" id="aboutSection" aria-label="About me">
+    <div class="about-card">
+      <div class="about-photo-wrap">
+        <img id="aboutPhoto" src="assets/profile-placeholder.png" alt="Profile photo" class="about-photo" loading="lazy" />
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow"></p>
+        <h2 id="aboutHeading">Cooking Keyframes, Timelines + Pixels...</h2>
+        <p id="aboutDescription">Hi! My name is Gerald. LA digital storyteller | BA Communications (Media Studies) @ CSUDH | Tech & Innovation Manager @ Dermalogica — crafting educational visuals + personal content with Premiere, Resolve, After Effects, Photoshop, Affinity, ElevenLabs & Firefly.</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="container fade-in">
+    <section class="toolbar" aria-label="Project filters">
+      <div class="search-wrap">
+        <label for="searchInput" class="sr-only">Search projects</label>
+        <input id="searchInput" type="search" placeholder="Search title, tags, category..." />
+      </div>
+      <div class="sort-wrap">
+        <label for="sortSelect" class="sr-only">Sort projects</label>
+        <select id="sortSelect" aria-label="Sort projects">
+          <option value="manual">Sort: Manual</option>
+          <option value="newest">Sort: Newest</option>
+          <option value="oldest">Sort: Oldest</option>
+          <option value="title-az">Sort: Title A–Z</option>
+          <option value="title-za">Sort: Title Z–A</option>
+        </select>
+      </div>
+
+      <div class="filters">
+        <div class="chip-row" id="categoryChips" aria-label="Category filters">
+          <button class="chip is-active" data-category="all" type="button">All</button>
+          <button class="chip" data-category="featured" type="button">Featured</button>
+          <button class="chip" data-category="video" type="button">Video</button>
+          <button class="chip" data-category="photo" type="button">Photo</button>
+          <button class="chip" data-category="design" type="button">Design</button>
+        </div>
+        <div class="chip-row" id="tagChips" aria-label="Tag filters"></div>
+      </div>
+    </section>
+
+    <section class="grid" id="projectGrid" aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer fade-in">
+    <div class="footer-grid">
+      <div>
+        <p>Replace sample media in <code>/assets</code> and edit <code>/data/projects.json</code> to update your portfolio.</p>
+      </div>
+      <nav class="social-links" id="socialLinks" aria-label="Social media links"></nav>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
