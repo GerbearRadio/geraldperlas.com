@@ -1,0 +1,49 @@
+{
+  "siteTitle": "YOUR NAME",
+  "siteSubtitle": "Minimal, customizable portfolio \u2022 JSON-powered \u2022 GitHub Pages friendly",
+  "about": {
+    "enabled": true,
+    "heading": "About Me",
+    "description": "Write a short introduction here. Share your background, creative focus, and the kind of work you enjoy making. You can also mention industries you work with, your style, or what you\u2019re looking for next.",
+    "profilePhoto": "assets/profile-placeholder.svg",
+    "alt": "Profile photo"
+  },
+  "socialLinks": [
+    {
+      "label": "Instagram",
+      "url": "https://instagram.com/yourhandle"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://linkedin.com/in/yourname"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:you@example.com"
+    }
+  ],
+  "contact": {
+    "enabled": true,
+    "heading": "Contact",
+    "description": "Open to freelance, collaborations, and full-time opportunities. The easiest way to reach me is by email.",
+    "email": "you@example.com",
+    "emailLabel": "Send Email",
+    "resumeUrl": "assets/resume-placeholder.txt",
+    "resumeLabel": "Download Resume",
+    "enableCopyEmail": true,
+    "enableForm": true,
+    "formHeading": "Send a message",
+    "formDescription": "This form uses Formspree so it works on GitHub Pages. Add your Formspree endpoint in site-config.json.",
+    "formspreeEndpoint": "https://formspree.io/f/YOUR_FORM_ID",
+    "successMessage": "Thanks \u2014 your message was sent.",
+    "errorMessage": "Sorry \u2014 something went wrong. Please email me instead."
+  },
+  "bts": {
+    "enabled": true,
+    "label": "Behind the Scenes",
+    "url": "bts.html",
+    "salt": "gp",
+    "passwordHash": "b06e2c6d032d3764ca2b8564c8b652c8a884ab45f535151d3bb3e91a487dac49",
+    "hint": "Ask me for access."
+  }
+}
