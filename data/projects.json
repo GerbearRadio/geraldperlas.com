@@ -1,0 +1,107 @@
+[
+  {
+    "id": "urban-silence",
+    "title": "Urban Silence",
+    "category": "photo",
+    "subcategory": "Editorial",
+    "type": "image",
+    "thumb": "assets/photo1.jpg",
+    "viewerSrc": "assets/photo1.jpg",
+    "detailPage": "project-urban-silence.html",
+    "year": "2026",
+    "role": "Photography",
+    "meta": "Photo / Editorial",
+    "description": "A quiet editorial photo study focused on composition, negative space, and architectural rhythm.",
+    "tags": [
+      "photo",
+      "editorial",
+      "minimal",
+      "architecture"
+    ],
+    "client": "Personal Project",
+    "summary": "A quiet editorial photo study focused on composition, negative space, and architectural rhythm.",
+    "challenge": "Create a clear visual direction with a minimal, editorial feel while keeping the system flexible.",
+    "approach": "Built a restrained visual system using spacing, hierarchy, and modular composition to keep the work adaptable.",
+    "outcome": "Produced a clean, presentation-ready concept that can expand into additional assets and campaign variations.",
+    "tools": [
+      "Camera",
+      "Lightroom"
+    ],
+    "credits": "Direction, production, and editing by You.",
+    "gallery": [
+      "assets/photo1.jpg"
+    ],
+    "featured": true,
+    "sortOrder": 1
+  },
+  {
+    "id": "motion-study",
+    "title": "Motion Study",
+    "category": "video",
+    "subcategory": "Reel",
+    "type": "video",
+    "thumb": "assets/video1.jpg",
+    "viewerSrc": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "detailPage": "project-motion-study.html",
+    "year": "2026",
+    "role": "Direction / Edit",
+    "meta": "Video / Reel",
+    "description": "A motion reel exploring pacing, cuts, and typography in a restrained visual system.",
+    "tags": [
+      "video",
+      "motion",
+      "editing",
+      "typography"
+    ],
+    "client": "Personal Project",
+    "summary": "A motion reel exploring pacing, cuts, and typography in a restrained visual system.",
+    "challenge": "Create a clear visual direction with a minimal, editorial feel while keeping the system flexible.",
+    "approach": "Built a restrained visual system using spacing, hierarchy, and modular composition to keep the work adaptable.",
+    "outcome": "Produced a clean, presentation-ready concept that can expand into additional assets and campaign variations.",
+    "tools": [
+      "Premiere Pro",
+      "After Effects"
+    ],
+    "credits": "Direction, production, and editing by You.",
+    "gallery": [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    ],
+    "featured": false,
+    "sortOrder": 2
+  },
+  {
+    "id": "minimal-identity",
+    "title": "Minimal Identity",
+    "category": "design",
+    "subcategory": "Branding",
+    "type": "image",
+    "thumb": "assets/design1.jpg",
+    "viewerSrc": "assets/design1.jpg",
+    "detailPage": "project-minimal-identity.html",
+    "year": "2026",
+    "role": "Brand Design",
+    "meta": "Design / Branding",
+    "description": "A branding concept built around modular type, spacing systems, and neutral visual language.",
+    "tags": [
+      "design",
+      "branding",
+      "identity",
+      "minimal"
+    ],
+    "client": "Personal Project",
+    "summary": "A branding concept built around modular type, spacing systems, and neutral visual language.",
+    "challenge": "Create a clear visual direction with a minimal, editorial feel while keeping the system flexible.",
+    "approach": "Built a restrained visual system using spacing, hierarchy, and modular composition to keep the work adaptable.",
+    "outcome": "Produced a clean, presentation-ready concept that can expand into additional assets and campaign variations.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "credits": "Direction, production, and editing by You.",
+    "gallery": [
+      "assets/design1.jpg"
+    ],
+    "featured": false,
+    "sortOrder": 3
+  }
+]
