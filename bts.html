@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Behind the Scenes — Portfolio</title>
+  <meta name="description" content="Password-protected behind the scenes page." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="bts">
+  <div id="siteLoader" class="site-loader" aria-hidden="false">
+    <div class="loader-inner">
+      <div class="loader-label">Loading</div>
+      <div class="loader-track"><div id="loaderBar" class="loader-bar"></div></div>
+    </div>
+  </div>
+  <div id="pageTransition" class="page-transition" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-hidden="true"></div>
+
+  <header class="site-header fade-in">
+    <div>
+      <p class="eyebrow"><a href="index.html" class="text-link">← Back to archive</a></p>
+      <h1>Behind the Scenes</h1>
+      <p class="subtitle">Work-in-progress, process notes, drafts, and experiments.</p>
+    </div>
+    <div class="header-actions">
+      <button id="themeToggle" class="btn" type="button" aria-label="Toggle dark and light mode">Toggle Theme</button>
+    </div>
+  </header>
+
+  <main class="container fade-in">
+    <section class="panel bts-panel">
+      <h2>Process Vault</h2>
+      <p class="bts-muted">Replace this content with your BTS material: screenshots, rough cuts, notes, reference boards, and iterations.</p>
+
+      <div class="gallery-grid" style="margin-top:.9rem">
+        <div class="gallery-item image"><img src="assets/bts-process-03.svg" alt="Sample BTS image" loading="lazy"></div>
+        <div class="gallery-item image"><img src="assets/bts-still-01.svg" alt="Sample BTS image" loading="lazy"></div>
+        <div class="gallery-item image"><img src="assets/bts-still-02.svg" alt="Sample BTS image" loading="lazy"></div>
+
+        <div class="gallery-item image"><img src="assets/bts-process-01.svg" alt="Sample BTS image" loading="lazy"></div>
+        <div class="gallery-item image"><img src="assets/bts-process-02.svg" alt="Sample BTS image" loading="lazy"></div>
+        <div class="gallery-item video"><img src="assets/bts-video-thumb.svg" alt="Sample BTS video thumb" loading="lazy"></div>
+      </div>
+
+      <div style="margin-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap">
+        <a class="btn" href="index.html">Back</a>
+        <button class="btn" id="logoutBtsBtn" type="button">Lock BTS</button>
+      </div>
+      <p class="bts-note">Note: This is lightweight “password gating” for a static site. For strong protection, use a host feature like Cloudflare Access or Netlify password protection.</p>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
