@@ -23,7 +23,7 @@
     }
   ],
   "contact": {
-    "enabled": true,
+    "enabled": false,
     "heading": "Contact",
     "description": "Open to freelance, collaborations, and full-time opportunities. The easiest way to reach me is by email.",
     "email": "you@example.com",
