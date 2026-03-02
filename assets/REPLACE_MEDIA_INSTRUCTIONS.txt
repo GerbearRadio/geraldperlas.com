@@ -1,0 +1,13 @@
+Replace SAMPLE/BTS placeholder files with your own media.
+Tip: keep the same filenames so you don't have to edit JSON/HTML.
+Project placeholders:
+- sample-photo.svg
+- sample-design.svg
+- sample-video-thumb.svg
+BTS placeholders:
+- bts-process-01.svg
+- bts-process-02.svg
+- bts-process-03.svg
+- bts-still-01.svg
+- bts-still-02.svg
+- bts-video-thumb.svg
