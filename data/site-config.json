@@ -23,15 +23,15 @@
     }
   ],
   "contact": {
-    "enabled": false,
+    "enabled": true,
     "heading": "Contact",
     "description": "Open to freelance, collaborations, and full-time opportunities. The easiest way to reach me is by email.",
     "email": "you@example.com",
     "emailLabel": "Send Email",
     "resumeUrl": "assets/resume-placeholder.txt",
     "resumeLabel": "Download Resume",
-    "enableCopyEmail": true,
-    "enableForm": true,
+    "enableCopyEmail": false,
+    "enableForm": false,
     "formHeading": "Send a message",
     "formDescription": "This form uses Formspree so it works on GitHub Pages. Add your Formspree endpoint in site-config.json.",
     "formspreeEndpoint": "https://formspree.io/f/YOUR_FORM_ID",
