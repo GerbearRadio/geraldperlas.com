@@ -33,8 +33,8 @@
     "resumeLabel": "Resume",
     "enableForm": true,
     "formHeading": "Message",
-    "formDescription": "This form uses Formspree (works on GitHub Pages). Add your endpoint below.",
-    "formspreeEndpoint": "https://formspree.io/f/YOUR_FORM_ID",
+    "formDescription": "",
+    "formspreeEndpoint": "https://formspree.io/f/xeelbpre",
     "successMessage": "Sent.",
     "errorMessage": "Something went wrong. Please email instead."
   },
