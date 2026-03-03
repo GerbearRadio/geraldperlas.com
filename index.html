@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YOUR NAME — Analog Archive</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- Analog Layers -->
+<div class="scanlines"></div>
+<div class="grain"></div>
+<div class="flicker" aria-hidden="true"></div>
+
+<div class="site-loader" id="siteLoader" aria-hidden="false">
+  <div class="loader-inner">
+    <p class="loader-label">LOADING ARCHIVE</p>
+    <div class="loader-line"><span id="loaderBar"></span></div>
+  </div>
+</div>
+<div class="page-transition" id="pageTransition" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="brand-row">
+    <h1 class="logo">YOUR NAME</h1>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">LIGHT</button>
+  </div>
+
+  <nav class="filters" aria-label="Category filters">
+    <button data-filter="all" class="active">ALL</button>
+    <button data-filter="photo">PHOTO</button>
+    <button data-filter="video">VIDEO</button>
+    <button data-filter="design">DESIGN</button>
+    <button data-filter="featured">FEATURED</button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section class="about" id="aboutSection" aria-label="About">
+    <div class="about-photo">
+      <img id="aboutPhoto" src="assets/profile-placeholder.svg" alt="Profile photo" />
+    </div>
+    <div class="about-copy">
+      <p class="about-kicker">ABOUT</p>
+      <h2 id="aboutHeading">About</h2>
+      <p id="aboutDescription">Write a short introduction here. Share your background, creative focus, and the kind of work you enjoy making.</p>
+      <div class="about-actions" id="aboutActions" aria-label="Social links and BTS"></div>
+    </div>
+  </section>
+
+  <section class="project-tools" aria-label="Project search and tags">
+    <label class="search-wrap" for="projectSearch">
+      <span class="search-label">SEARCH</span>
+      <input id="projectSearch" type="search" placeholder="Search title, tag, or category…" autocomplete="off" />
+    </label>
+    <div class="tools-row">
+      <div class="tag-chips" id="tagChips" aria-label="Tag filters"></div>
+      <label class="sort-wrap" for="sortSelect">
+        <span class="search-label">SORT</span>
+        <select id="sortSelect">
+          <option value="manual">MANUAL</option>
+          <option value="newest">NEWEST</option>
+          <option value="oldest">OLDEST</option>
+          <option value="title-az">TITLE A–Z</option>
+          <option value="title-za">TITLE Z–A</option>
+        </select>
+      </label>
+    </div>
+  </section>
+
+  <section class="grid" id="projectGrid" aria-label="Projects">
+    <!-- Project cards render from data/projects.json -->
+  </section>
+  <p class="empty-state" id="emptyState" hidden>No projects match that search yet.</p>
+
+  <section class="contact" id="contactSection" aria-label="Contact" hidden>
+    <h2 id="contactHeading">Contact</h2>
+    <p id="contactDescription">Open to freelance, collaborations, and full-time opportunities.</p>
+    <div class="contact-actions">
+      <a class="tag-chip" id="contactEmailBtn" href="mailto:you@example.com">EMAIL</a>
+      <button class="tag-chip" id="copyEmailBtn" type="button">COPY EMAIL</button>
+      <a class="tag-chip" id="resumeBtn" href="assets/resume-placeholder.txt" target="_blank" rel="noopener">RESUME</a>
+      <a class="tag-chip" id="btsLink" href="bts.html">BEHIND THE SCENES</a>
+    </div>
+
+    <div class="contact-form" id="contactFormWrap">
+      <h3 id="contactFormHeading">Message</h3>
+      <p class="small" id="contactFormDescription">This form uses Formspree (works on GitHub Pages).</p>
+      <form id="contactForm" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+        <input name="name" type="text" placeholder="Name" autocomplete="name" />
+        <input name="email" type="email" placeholder="Email" autocomplete="email" required />
+        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+        <div class="contact-form-row">
+          <button class="tag-chip" type="submit" id="contactSubmitBtn">SEND</button>
+          <span class="small" id="formStatus" aria-live="polite"></span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+</main>
+
+<aside class="detail-panel" id="detailPanel" aria-hidden="true">
+  <div class="detail-backdrop" data-detail-close="true"></div>
+  <div class="detail-shell" role="dialog" aria-label="Project details">
+    <div class="detail-top">
+      <p class="detail-kicker" id="detailKicker">PROJECT DETAILS</p>
+      <button class="detail-close" id="detailClose" aria-label="Close project details">✕</button>
+    </div>
+    <div class="detail-content">
+      <div class="detail-media" id="detailMedia"></div>
+      <div class="detail-copy">
+        <h2 id="detailTitle">Project Title</h2>
+        <p id="detailMeta">2026 · Role</p>
+        <p id="detailDesc">Project description goes here.</p>
+        <ul class="detail-list">
+          <li>Replace this text with your project overview.</li>
+          <li>Add process notes, tools used, and outcomes.</li>
+          <li>Link out to full case studies or live work as needed.</li>
+        </ul>
+        <p><a class="detail-link" id="detailPageLink" href="#">Open dedicated project page →</a></p>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<footer class="site-footer">
+  <p>© 2026 YOUR NAME — Analog Archive</p>
+</footer>
+
+<!-- Lightbox / Modal -->
+<div class="modal" id="modal" aria-hidden="true" role="dialog" aria-label="Project viewer">
+  <div class="modal-backdrop" data-close="true"></div>
+
+  <div class="modal-frame" role="document">
+    <div class="modal-bar">
+      <div class="modal-title" id="modalTitle">TITLE</div>
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    </div>
+
+    <div class="modal-body" id="modalBody">
+      <!-- Injected media -->
+    </div>
+
+    <div class="modal-hud">
+      <span id="modalMode">PLAY ▷</span>
+      <span id="modalTC">00:00:00</span>
+      <span class="right">SP • EP</span>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" aria-live="polite" aria-hidden="true"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

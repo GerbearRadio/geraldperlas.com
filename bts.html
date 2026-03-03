@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Behind the Scenes — Analog Archive</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bts-page">
+
+<!-- Analog Layers -->
+<div class="scanlines"></div>
+<div class="grain"></div>
+<div class="flicker" aria-hidden="true"></div>
+
+<div class="site-loader" id="siteLoader" aria-hidden="false">
+  <div class="loader-inner">
+    <p class="loader-label">LOADING</p>
+    <div class="loader-line"><span id="loaderBar"></span></div>
+  </div>
+</div>
+<div class="page-transition" id="pageTransition" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="brand-row">
+    <h1 class="logo">YOUR NAME</h1>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">LIGHT</button>
+  </div>
+
+  <nav class="filters" aria-label="BTS navigation">
+    <button data-nav="home" id="backHomeBtn">HOME</button>
+    <button data-nav="lock" id="lockBtsBtn">LOCK</button>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="contact" style="border-top:0;padding-top:0;margin-top:0">
+    <h2>Behind the Scenes</h2>
+    <p class="small">Process notes, drafts, and experiments. Replace the placeholders in <code>assets/</code>.</p>
+
+    <div class="grid" style="margin-top: var(--gap);">
+      <article class="card">
+        <div class="media" style="cursor:default"><img src="assets/bts-process-01.svg" alt="BTS placeholder" /></div>
+        <h2>Process 01</h2>
+        <p class="meta">NOTES / SKETCHES</p>
+      </article>
+      <article class="card">
+        <div class="media" style="cursor:default"><img src="assets/bts-process-02.svg" alt="BTS placeholder" /></div>
+        <h2>Process 02</h2>
+        <p class="meta">SETUP / REF</p>
+      </article>
+      <article class="card">
+        <div class="media" style="cursor:default"><img src="assets/bts-process-03.svg" alt="BTS placeholder" /></div>
+        <h2>Process 03</h2>
+        <p class="meta">ITERATIONS</p>
+      </article>
+      <article class="card">
+        <div class="media" style="cursor:default"><img src="assets/bts-still-01.svg" alt="BTS placeholder" /></div>
+        <h2>Still 01</h2>
+        <p class="meta">BTS STILL</p>
+      </article>
+      <article class="card">
+        <div class="media" style="cursor:default"><img src="assets/bts-still-02.svg" alt="BTS placeholder" /></div>
+        <h2>Still 02</h2>
+        <p class="meta">BTS STILL</p>
+      </article>
+      <article class="card">
+        <div class="media" style="cursor:default"><img src="assets/bts-video-thumb.svg" alt="BTS placeholder" /></div>
+        <h2>Video</h2>
+        <p class="meta">THUMBNAIL</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast" aria-live="polite" aria-hidden="true"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
