@@ -35,7 +35,7 @@
     "formHeading": "Message",
     "formDescription": "",
     "formspreeEndpoint": "https://formspree.io/f/xeelbpre",
-    "successMessage": "Sent.",
+    "successMessage": "Thank you for reaching out! I will respond to you as soon as I can!. =]",
     "errorMessage": "Something went wrong. Please email instead."
   },
   "bts": {
