@@ -512,7 +512,7 @@ body.is-ready .site-header, body.is-ready .wrap, body.is-ready .site-footer{ opa
 }
 .about-copy p{
   color: var(--muted);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.7;
   max-width: 70ch;
 }
