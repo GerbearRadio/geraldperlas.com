@@ -512,8 +512,8 @@ body.is-ready .site-header, body.is-ready .wrap, body.is-ready .site-footer{ opa
 }
 .about-copy p{
   color: var(--muted);
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.7;
   max-width: 70ch;
 }
 .about-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
