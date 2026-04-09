@@ -1,0 +1,1 @@
+Replace this with your resume PDF and update data/site-config.json -> contact.resumeUrl

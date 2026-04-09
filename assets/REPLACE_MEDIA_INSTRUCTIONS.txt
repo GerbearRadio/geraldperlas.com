@@ -1,0 +1,18 @@
+Replace the sample placeholders in /assets with your own media.
+Easiest method: keep filenames the same so you don't need to edit JSON/HTML.
+
+Project placeholders:
+- sample-photo.svg
+- sample-design.svg
+- sample-video-thumb.svg
+
+Profile placeholder:
+- profile-placeholder.svg
+
+BTS placeholders:
+- bts-process-01.svg
+- bts-process-02.svg
+- bts-process-03.svg
+- bts-still-01.svg
+- bts-still-02.svg
+- bts-video-thumb.svg
