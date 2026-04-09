@@ -1,0 +1,53 @@
+{
+  "siteTitle": "GERALD PERLAS",
+  "siteSubtitle": "Analog Archive • Minimal • Customizable",
+
+  "siteDescription": "LA digital storyteller. Photography, video, and design by Gerald Perlas — Tech & Innovation Manager at Dermalogica.",
+  "canonicalUrl": "https://geraldperlas.com/",
+  "ogImage": "https://geraldperlas.com/assets/og-cover.jpg",
+
+  "about": {
+    "enabled": true,
+    "heading": "Yuh Found Me! 😏",
+    "description": "LA digital storyteller | BA Communications (Media Studies) @ CSUDH | Tech & Innovation Manager @ Dermalogica — crafting educational visuals + personal content with Premiere, Resolve, After Effects, Photoshop, Affinity, ElevenLabs & Firefly. Obstacles fuel my creations. 📷🎥🎨🎬💻✨🚀",
+    "profilePhoto": "assets/profile-placeholder.png",
+    "alt": "Gerald Perlas — profile photo"
+  },
+
+  "socialLinks": [
+    {
+      "label": "Beacons",
+      "url": "https://beacons.ai/kvya_gerald"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/geraldperlas/"
+    }
+  ],
+
+  "contact": {
+    "enabled": true,
+    "heading": "Contact",
+    "description": "Open to freelance, collaborations, and full-time opportunities.",
+    "email": "geraldperlas@protonmail.com",
+    "emailLabel": "Email",
+    "enableCopyEmail": true,
+    "resumeUrl": "assets/Gerald Perlas_Resume 2026.pdf",
+    "resumeLabel": "Resume",
+    "enableForm": true,
+    "formHeading": "Message",
+    "formDescription": "This form uses Formspree (works on GitHub Pages).",
+    "formspreeEndpoint": "https://formspree.io/f/xeelbpre",
+    "successMessage": "Thank you for your message! I will respond as soon as I can. =]",
+    "errorMessage": "Something went wrong. Please email instead."
+  },
+
+  "bts": {
+    "enabled": true,
+    "label": "Behind the Scenes",
+    "url": "bts.html",
+    "salt": "gp",
+    "passwordHash": "e06aa794b4359436689c4deed67d87bba43d3679f2de6d431be4cd53181c5027",
+    "hint": "Ask me for access."
+  }
+}
